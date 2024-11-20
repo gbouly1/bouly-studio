@@ -1,13 +1,55 @@
-body {
+@import "./var.css";
+
+/* index.css */
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  height: 100%;
+  width: 100%; /* Prend toute la largeur de l'écran */
+  font-size: 100%; /* Base pour rem = 16px */
+  scroll-behavior: smooth;
+  font-family: var(--inter), sans-serif; /* Remplace par ta font */
+}
+
+body {
+  background-color: var(--black);
+  color: #ffffff; /* Couleur par défaut */
+}
+
+#root {
+  height: 100%; /* Assure que l’app React occupe tout l’écran */
+  width: 100%;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
 }

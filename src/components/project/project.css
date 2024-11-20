@@ -1,0 +1,45 @@
+.project-wrapper {
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.project-wrapper a {
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-project {
+  display: flex;
+  line-height: 2;
+  gap: 5px;
+}
+
+.title-project {
+  font-family: "Roboto Serif";
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.date-project {
+  font-family: "Roboto Serif";
+  display: flex;
+  align-self: flex-end;
+  letter-spacing: 0.5px;
+  transform: scale(0.98);
+}
+
+.about-project {
+  display: flex;
+  align-self: flex-end;
+}

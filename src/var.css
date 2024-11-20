@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Roboto Serif";
+  src: url(./assets/fonts/static/RobotoSerif-Regular.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Serif Italic";
+  src: url(./assets/fonts/static/RobotoSerif-Italic.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/static-inter/Inter_24pt-Regular.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter Italic";
+  src: url(./assets/fonts/static-inter/Inter_24pt-Italic.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --black: #0b1215;
+  --green: #03fcba;
+  --roboto: "Roboto Serif", serif;
+  --roboto-italic: "Roboto Serif Italic", serif;
+  --inter: "Inter", sans-serif;
+  --inter-italic: "Inter Italic", sans-serif;
+}
