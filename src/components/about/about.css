@@ -1,0 +1,55 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 150px;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.about-inter {
+  font-family: "Inter";
+  font-size: 6rem;
+}
+
+.about-italic {
+  font-family: "Roboto Serif Italic";
+  color: var(--green);
+  font-size: 6rem;
+}
+
+span.about-italic {
+  font-size: 8rem;
+}
+
+.first-line.active,
+.third-line.active {
+  align-self: flex-start;
+  transform: translateX(0);
+  opacity: 1;
+}
+.first-line,
+.third-line {
+  align-self: flex-start;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out, opacity 1s ease;
+}
+
+.second-line.active,
+.fourth-line.active {
+  align-self: flex-end;
+  transform: translateX(0);
+  opacity: 1;
+}
+.second-line,
+.fourth-line {
+  align-self: flex-end;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 1s ease-in-out, opacity 1s ease-out;
+}
+
+.fourth-line {
+  padding-right: 150px;
+}

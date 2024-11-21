@@ -2,6 +2,9 @@
   position: relative;
   height: calc(100vh - 80px);
 } */
+.hero-wrapper {
+  height: 100vh;
+}
 
 .socials {
   position: relative;
@@ -14,7 +17,7 @@ h1 {
   font-family: "Roboto Serif";
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 6rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;

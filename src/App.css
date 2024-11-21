@@ -4,7 +4,7 @@
   padding: 0; /* Pas de marges */
   margin: 0; /* Pas de centrage */
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 
 header {

@@ -7,7 +7,7 @@ const Project = ({ title, date, about }) => {
       <a href="#">
         <div className="info-project">
           <h2 className="title-project">{title}</h2>
-          <p className="date-project"> ,{date}</p>
+          <p className="date-project"> , {date}</p>
         </div>
         <p className="about-project">{about}</p>
       </a>
