@@ -46,6 +46,11 @@ const About = () => {
       <p className="about-inter fourth-line" ref={fourthRef}>
         from Paris<span className="dot"></span>
       </p>
+      <ul className="ul-socials-about socials-about">
+        <li className="li-about">instagram</li>
+        <li className="li-about">linkdin</li>
+        <li className="li-about">twitter</li>
+      </ul>
     </div>
   );
 };

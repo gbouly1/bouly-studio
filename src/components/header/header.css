@@ -24,9 +24,14 @@ ul {
   gap: 30px;
 }
 
-ul li {
+.li-nav-bar {
   font-family: "Inter Italic";
   font-size: 1rem;
   font-weight: 200;
   letter-spacing: 0.5px;
+  transition: color 0.7s ease;
+}
+
+.li-nav-bar:hover {
+  color: var(--green);
 }

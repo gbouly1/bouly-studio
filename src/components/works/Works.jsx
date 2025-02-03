@@ -10,23 +10,16 @@ const Works = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Ajoute la classe 'active' aux deux éléments
-          if (recentWorksRef.current) {
-            recentWorksRef.current.classList.add("active");
-          }
-          if (projectsRef.current) {
-            projectsRef.current.classList.add("active");
-          }
+          entry.target.classList.add("active");
         }
       });
     });
 
-    // Observer recentWorksRef
+    // Observer pour les deux éléments
     if (recentWorksRef.current) {
       observer.observe(recentWorksRef.current);
+      // observer.observe(projectsRef.current);
     }
-
-    // Observer projectsRef
     if (projectsRef.current) {
       observer.observe(projectsRef.current);
     }

@@ -58,5 +58,5 @@
 .project-wrapper:hover {
   background-color: var(--green);
   color: var(--black);
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
 }

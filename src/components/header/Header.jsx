@@ -5,21 +5,20 @@ import logo from "../../assets/images/logo.png";
 const Header = () => {
   return (
     <div className="header">
-      <img src={logo} alt="" />
+      <a href="#hero">
+        <img src={logo} alt="" />
+      </a>
       <nav>
         <ul>
-          <li>
-            <a href="#works"></a>
-            {"{works}"}
-          </li>
-          <li>
-            <a href="#me"></a>
-            {"{me}"}
-          </li>
-          <li>
-            <a href="#contact"></a>
-            {"{contact}"}
-          </li>
+          <a href="#works">
+            <li className="li-nav-bar">{"{works}"}</li>
+          </a>
+          <a href="#about">
+            <li className="li-nav-bar">{"{me}"}</li>
+          </a>
+          <a href="#contact">
+            <li className="li-nav-bar">{"{contact}"}</li>
+          </a>
         </ul>
       </nav>
     </div>
