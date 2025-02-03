@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./about.css";
-import { useEffect, useRef } from "react";
 
 const About = () => {
   const firstRef = useRef();
   const secondRef = useRef();
   const thirdRef = useRef();
   const fourthRef = useRef();
+  const fifthRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -30,6 +30,9 @@ const About = () => {
     if (fourthRef.current) {
       observer.observe(fourthRef.current);
     }
+    if (fifthRef.current) {
+      observer.observe(fifthRef.current);
+    }
   }, []);
 
   return (
@@ -46,6 +49,15 @@ const About = () => {
       <p className="about-inter fourth-line" ref={fourthRef}>
         from Paris<span className="dot"></span>
       </p>
+      <div>
+        <p className="description" ref={fifthRef}>
+          After switching careers two years ago, I gradually stepped into the
+          world of web development before discovering a true passion for
+          crafting experiences through websites. I'd be thrilled to bring your
+          project to life with a unique indentity and a smooth, well-designed
+          user-journey.
+        </p>
+      </div>
       <ul className="ul-socials-about socials-about">
         <li className="li-about">instagram</li>
         <li className="li-about">linkdin</li>
