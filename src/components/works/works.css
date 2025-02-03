@@ -13,11 +13,10 @@
   text-transform: uppercase;
   transition: transform 1s ease-in-out;
   transition-delay: 1s;
-  /* padding-top: 150px; */
 }
 
 .recent-works.active {
-  padding-top: 150px;
+  margin-bottom: 100px;
   align-self: center;
   transform: translateY(0);
   display: flex;

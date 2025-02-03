@@ -2,15 +2,15 @@ import "./App.css";
 import About from "./components/about/About";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
-import ParticlesBackground from "./components/particles/ParticlesBackground"; // Import du composant Particles
+import ParticlesComponent from "./components/particles/Particles";
 import Works from "./components/works/Works";
 
 function App() {
   return (
-    <>
+    <div className="App">
+      <ParticlesComponent id="particles" />
       <Header />
       <main>
-        <ParticlesBackground /> {/* Ajout du fond interactif */}
         <section id="hero">
           <Hero />
         </section>
@@ -21,7 +21,7 @@ function App() {
           <About />
         </section>
       </main>
-    </>
+    </div>
   );
 }
 

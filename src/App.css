@@ -1,44 +1,7 @@
-/* App.css */
-
-/* Conteneur principal */
-.container {
-  width: 100%; /* Prend toute la largeur de l'écran */
-  padding: 0; /* Supprime les marges internes */
-  margin: 0; /* Supprime les marges externes */
-  position: relative;
-  height: 80vh;
-  z-index: 1; /* Assure que le contenu reste au-dessus des particules */
-}
-
-/* Particles.js */
-#tsparticles {
-  position: fixed; /* Fixe les particules en arrière-plan */
-  width: 100%;
+#particles canvas,
+#matrix {
+  z-index: -1;
   height: 100%;
-  z-index: -1; /* Place les particules derrière tout le contenu */
-  border: 2px solid red;
-}
-
-/* Header */
-header {
   width: 100%;
-  background-color: #00ffcc; /* Couleur de fond */
-  position: relative; /* Position relative pour le layering */
-  z-index: 2; /* Assure que le header est au-dessus des particules */
-}
-
-/* Footer */
-footer {
-  width: 100%;
-  background-color: #333; /* Couleur de fond sombre */
-  color: white; /* Couleur du texte */
-  position: relative;
-  z-index: 2; /* Assure que le footer est au-dessus des particules */
-}
-
-/* Section */
-section {
-  width: 100%;
-  position: relative; /* Position relative pour maintenir un ordre visuel */
-  z-index: 1; /* Place les sections au-dessus des particules */
+  position: absolute;
 }
