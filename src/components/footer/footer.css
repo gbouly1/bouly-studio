@@ -1,0 +1,48 @@
+.socials {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  border-top: 2px solid white;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.ul-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.li-socials,
+.status {
+  font-family: "Inter";
+  font-size: 1.2rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--green);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}

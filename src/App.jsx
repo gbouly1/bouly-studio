@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/about/About";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import ParticlesComponent from "./components/particles/Particles";
@@ -21,6 +22,9 @@ function App() {
           <About />
         </section>
       </main>
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -58,11 +58,6 @@ const About = () => {
           user-journey.
         </p>
       </div>
-      <ul className="ul-socials-about socials-about">
-        <li className="li-about">instagram</li>
-        <li className="li-about">linkdin</li>
-        <li className="li-about">twitter</li>
-      </ul>
     </div>
   );
 };
