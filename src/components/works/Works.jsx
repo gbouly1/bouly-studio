@@ -1,44 +1,14 @@
-import React, { useEffect, useRef } from "react";
-import "./works.css";
+import React from "react";
 import Project from "../project/Project";
+import "./works.css";
 
 const Works = () => {
-  const recentWorksRef = useRef(); // Ref pour recent-works
-  const projectsRef = useRef(); // Ref pour projects-container
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    });
-
-    // Observer pour les deux éléments
-    if (recentWorksRef.current) {
-      observer.observe(recentWorksRef.current);
-      // observer.observe(projectsRef.current);
-    }
-    if (projectsRef.current) {
-      observer.observe(projectsRef.current);
-    }
-
-    // Cleanup
-    return () => {
-      if (recentWorksRef.current) observer.unobserve(recentWorksRef.current);
-      if (projectsRef.current) observer.unobserve(projectsRef.current);
-    };
-  }, []);
-
   return (
     <div className="container works-wrapper">
-      {/* Ref pour l'élément recent-works */}
-      <p ref={recentWorksRef} className="recent-works">
+      <p className="recent-works">
         Welcome to my recents <span className="span-works">{"{works}"}</span>
       </p>
-      {/* Ref pour l'élément projects-container */}
-      <div ref={projectsRef} className="projects-container">
+      <div className="projects-container">
         <Project
           key="l'épi se rit"
           title="L'épi se rit"

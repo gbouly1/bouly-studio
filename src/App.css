@@ -14,14 +14,19 @@
   height: 100%;
 }
 
+#hero {
+  height: 100vh;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     scale: 0.5;
@@ -30,10 +35,10 @@
     opacity: 1;
     scale: 1;
   }
-}
+} */
 
-section {
+/* section {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */

@@ -3,7 +3,7 @@
   height: calc(100vh - 80px);
 } */
 .hero-wrapper {
-  height: 100vh;
+  height: 80vh;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 15%;
 }
 

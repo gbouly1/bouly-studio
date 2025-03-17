@@ -23,32 +23,15 @@ span.about-italic {
   font-size: 8rem;
 }
 
-.first-line.active,
-.third-line.active {
-  align-self: flex-start;
-  transform: translateX(0);
-  opacity: 1;
-}
 .first-line,
 .third-line {
   align-self: flex-start;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform 1s ease-in-out, opacity 1s ease;
 }
 
-.second-line.active,
-.fourth-line.active {
-  align-self: flex-end;
-  transform: translateX(0);
-  opacity: 1;
-}
 .second-line,
 .fourth-line {
   align-self: flex-end;
-  opacity: 0;
-  transform: translateX(100%);
-  transition: transform 1s ease-in-out, opacity 1s ease-out;
+  opacity: 1;
 }
 
 .fourth-line {
@@ -75,11 +58,6 @@ span.about-italic {
   text-align: center;
   font-family: "Inter";
   font-size: 3rem;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.description.active {
   opacity: 1;
 }
 
