@@ -15,11 +15,11 @@ function App() {
         <section id="hero">
           <Hero />
         </section>
-        <section id="works">
-          <Works />
-        </section>
         <section id="about">
           <About />
+        </section>
+        <section id="works">
+          <Works />
         </section>
       </main>
       <div className="footer">
