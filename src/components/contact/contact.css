@@ -1,0 +1,39 @@
+.contact-container {
+  position: relative;
+  height: 100vh;
+  padding: 60px 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 40px 0;
+  z-index: 2;
+}
+
+.contact-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-title {
+  font-size: 250px;
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.contact-studio {
+  font-size: 250px;
+  font-weight: 300;
+  font-family: "Roboto Serif Italic";
+  z-index: 10;
+}
+
+.under-button {
+  z-index: 2;
+}
+
+.o-contact {
+  color: var(--green);
+}

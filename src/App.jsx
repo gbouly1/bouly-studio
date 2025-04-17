@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/about/About";
+import Contact from "./components/contact/Contact"; // Ajout de l'import
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
@@ -20,6 +21,9 @@ function App() {
         </section>
         <section id="works">
           <Works />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </main>
       <div className="footer">

@@ -5,9 +5,15 @@ const Footer = () => {
   return (
     <div className="socials">
       <ul className="ul-socials">
-        <li className="li-socials">instagram</li>
-        <li className="li-socials">linkdin</li>
-        <li className="li-socials">twitter</li>
+        <li className="li-socials">
+          <a href="#">instagram</a>
+        </li>
+        <li className="li-socials">
+          <a href="#">linkdin</a>
+        </li>
+        <li className="li-socials">
+          <a href="#">twitter</a>
+        </li>
       </ul>
       <p className="status">
         available <span className="dot"></span>

@@ -6,6 +6,7 @@
 }
 
 .recent-works {
+  font-family: "Inter";
   z-index: 2;
   align-self: center;
   display: flex;

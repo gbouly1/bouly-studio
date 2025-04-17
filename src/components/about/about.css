@@ -1,3 +1,7 @@
+.about-wrapper p {
+  font-family: "Inter";
+}
+
 .about-container {
   position: relative;
   display: flex;
@@ -29,7 +33,11 @@
 }
 
 .hobbies-title {
-  padding-top: 25px;
+  color: var(--green);
+  font-family: "Inter Italic";
+  align-self: center;
+  font-size: 1.5rem;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -88,12 +96,11 @@
 }
 
 .hobbie-item {
-  position: absolute; /* Pour permettre un positionnement aléatoire */
+  font-family: "Inter";
+  position: absolute;
   animation: floating1 12s ease-in-out infinite;
   font-size: 2rem;
 }
-
-/* Positionnement aléatoire pour chaque élément avec animations variées */
 
 .hobbie-item:nth-child(2) {
   top: 30%;

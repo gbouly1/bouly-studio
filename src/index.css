@@ -15,7 +15,6 @@ body {
   width: 100%; /* Prend toute la largeur de l'écran */
   font-size: 100%; /* Base pour rem = 16px */
   scroll-behavior: smooth;
-  font-family: var(--inter), sans-serif; /* Remplace par ta font */
 }
 
 body {

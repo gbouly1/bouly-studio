@@ -6,9 +6,16 @@
   position: absolute;
 }
 
-/* section {
+#hero,
+#about {
   height: 100vh;
-} */
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
 
 .footer {
   position: fixed;

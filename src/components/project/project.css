@@ -33,7 +33,7 @@
 }
 
 .title-project {
-  font-family: "Roboto Serif";
+  font-family: "Inter";
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
@@ -43,7 +43,7 @@
 }
 
 .date-project {
-  font-family: "Roboto Serif";
+  font-family: "Inter";
   display: flex;
   align-self: flex-end;
   letter-spacing: 0.5px;
@@ -53,6 +53,7 @@
 .about-project {
   display: flex;
   align-self: flex-end;
+  font-family: "Inter";
 }
 
 .project-wrapper:hover {

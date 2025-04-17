@@ -4,7 +4,7 @@ import "./about.css";
 const Hobbies = () => {
   return (
     <div className="hobbies-wrapper">
-      <h2 className="hobbies-title">Things I Love</h2>
+      <h2 className="hobbies-title">{"{things I love}"}</h2>
       <p className="hobbie-item psg">Paris Saint Germain</p>
       <p className="hobbie-item wow">World of Warcraft</p>
       <p className="hobbie-item horses">Horses</p>
