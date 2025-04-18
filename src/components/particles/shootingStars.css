@@ -27,7 +27,7 @@
   animation: appearAndMove 30s linear infinite;
 }
 
-.star::before,
+/* .star::before,
 .star::after {
   position: absolute;
   content: "";
@@ -38,7 +38,7 @@
     rgba(255, 255, 255, 0);
   transform: translateX(50%) rotateZ(45deg);
   animation: shiningPeriodic 30s linear infinite;
-}
+} */
 
 .star::after {
   transform: translateX(50%) rotateZ(-45deg);
