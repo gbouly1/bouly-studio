@@ -1,0 +1,168 @@
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.shooting-stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(15deg);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5px;
+  background: linear-gradient(-45deg, #fff, rgba(0, 0, 255, 0));
+  filter: drop-shadow(0 0 6px #fff);
+  opacity: 0;
+  animation: appearAndMove 30s linear infinite;
+}
+
+.star::before,
+.star::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 1px);
+  right: 0;
+  height: 1px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #fff),
+    rgba(255, 255, 255, 0);
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shiningPeriodic 30s linear infinite;
+}
+
+.star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(1) {
+  top: calc(100% - 200px);
+  left: calc(50% - 450px);
+  animation-delay: -25s; /* Modifié pour apparaître rapidement (5s) */
+}
+.star:nth-child(1)::before,
+.star:nth-child(1)::after {
+  animation-delay: -25s;
+}
+
+/* Garder les étoiles 2 et 3 existantes */
+.star:nth-child(2) {
+  top: calc(100% - 300px);
+  left: calc(50% - -200px);
+  animation-delay: -18s;
+}
+.star:nth-child(2)::before,
+.star:nth-child(2)::after {
+  animation-delay: -18s;
+}
+
+.star:nth-child(3) {
+  top: calc(40% - 0px);
+  left: calc(50% - 800px);
+  animation-delay: -15s;
+}
+.star:nth-child(3)::before,
+.star:nth-child(3)::after {
+  animation-delay: -15s;
+}
+
+/* Nouvelles étoiles (4 à 8) avec des délais variés */
+.star:nth-child(4) {
+  top: calc(30% - 100px);
+  left: calc(50% - 200px);
+  animation-delay: -10s;
+}
+.star:nth-child(4)::before,
+.star:nth-child(4)::after {
+  animation-delay: -10s;
+}
+
+.star:nth-child(5) {
+  top: calc(60% + 50px);
+  left: calc(50% + 300px);
+  animation-delay: -8s;
+}
+.star:nth-child(5)::before,
+.star:nth-child(5)::after {
+  animation-delay: -8s;
+}
+
+.star:nth-child(6) {
+  top: calc(20% + 100px);
+  left: calc(50% + 500px);
+  animation-delay: -4s;
+}
+.star:nth-child(6)::before,
+.star:nth-child(6)::after {
+  animation-delay: -4s;
+}
+
+.star:nth-child(7) {
+  top: calc(80% - 150px);
+  left: calc(50% - 100px);
+  animation-delay: 54s;
+}
+.star:nth-child(7)::before,
+.star:nth-child(7)::after {
+  animation-delay: 54s;
+}
+
+.star:nth-child(8) {
+  top: calc(50% - 50px);
+  left: calc(50% - 600px);
+  animation-delay: 68s;
+}
+.star:nth-child(8)::before,
+.star:nth-child(8)::after {
+  animation-delay: 68s;
+}
+
+@keyframes appearAndMove {
+  /* L'étoile est invisible pendant la majorité du temps */
+  0%,
+  96.4% {
+    opacity: 0;
+    width: 0;
+    transform: translateX(0);
+  }
+  /* L'étoile apparaît et commence à s'allonger */
+  96.5% {
+    opacity: 1;
+    width: 0;
+  }
+  /* L'étoile atteint sa longueur maximale */
+  97.5% {
+    width: 100px;
+  }
+  /* L'étoile se déplace et disparaît progressivement */
+  100% {
+    width: 0;
+    opacity: 0;
+    transform: translateX(400px);
+  }
+}
+
+@keyframes shiningPeriodic {
+  /* La traînée lumineuse est invisible pendant la majorité du temps */
+  0%,
+  97.4% {
+    width: 0;
+  }
+  /* La traînée lumineuse atteint sa longueur maximale */
+  98% {
+    width: 30px;
+  }
+  /* La traînée lumineuse disparaît */
+  100% {
+    width: 0;
+  }
+}

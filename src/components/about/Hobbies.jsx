@@ -11,7 +11,7 @@ const Hobbies = () => {
       <p className="hobbie-item sum-41">Sum41</p>
       <p className="hobbie-item mozza">Mozza Sticks</p>
       <p className="hobbie-item pat-conroy">Pat Conroy</p>
-      <p className="hobbie-item red-wine">Red Wine</p>
+      <p className="hobbie-item red-wine">Juice Wrld</p>
       <p className="hobbie-item movie">Apocalypse Now</p>
     </div>
   );

@@ -15,6 +15,8 @@
 .contact-container p {
   margin: 0;
   padding: 0;
+  outline: none; /* Supprime le contour de focus */
+  user-select: none; /* Empêche la sélection de texte */
 }
 
 .contact-title {

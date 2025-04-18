@@ -20,6 +20,11 @@
 .status {
   font-family: "Inter";
   font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.li-socials:hover {
+  color: var(--green);
 }
 
 .status {
