@@ -4,12 +4,14 @@ import Contact from "./components/contact/Contact"; // Ajout de l'import
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Loader from "./components/loader/Loader";
 import ParticlesComponent from "./components/particles/Particles";
 import Works from "./components/works/Works";
 
 function App() {
   return (
     <div className="App">
+      <Loader />
       <ParticlesComponent id="particles" />
       <Header />
       <main>

@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import "./shootingStars.css"; // Créez ce fichier CSS séparé pour les animations
 
 const ParticlesComponent = (props) => {
-  const [init, setInit] = useState(false);
+  const [, setInit] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {

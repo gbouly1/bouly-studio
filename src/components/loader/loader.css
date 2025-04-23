@@ -1,0 +1,56 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: var(--black); /* Optional: semi-transparent background */
+  position: fixed; /* Optional: to cover the entire viewport */
+}
+
+.animated-letter {
+  font-family: "Inter";
+  font-size: 3em;
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInOut 1s ease-in-out forwards;
+}
+
+.o-loader {
+  color: var(--green);
+}
+
+.space-letter {
+  display: inline-block;
+  width: 0.5em; /* largeur explicite pour l'espace */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

@@ -47,73 +47,73 @@
 .star:nth-child(1) {
   top: calc(100% - 200px);
   left: calc(50% - 450px);
-  animation-delay: -25s; /* Modifié pour apparaître rapidement (5s) */
+  animation-delay: -20s; /* Modifié pour apparaître rapidement (5s) */
 }
 .star:nth-child(1)::before,
 .star:nth-child(1)::after {
-  animation-delay: -25s;
+  animation-delay: -20s;
 }
 
 /* Garder les étoiles 2 et 3 existantes */
 .star:nth-child(2) {
   top: calc(100% - 300px);
   left: calc(50% - -200px);
-  animation-delay: -18s;
+  animation-delay: -14s;
 }
 .star:nth-child(2)::before,
 .star:nth-child(2)::after {
-  animation-delay: -18s;
+  animation-delay: -14s;
 }
 
 .star:nth-child(3) {
   top: calc(40% - 0px);
   left: calc(50% - 800px);
-  animation-delay: -15s;
+  animation-delay: 0s;
 }
 .star:nth-child(3)::before,
 .star:nth-child(3)::after {
-  animation-delay: -15s;
+  animation-delay: 0s;
 }
 
 /* Nouvelles étoiles (4 à 8) avec des délais variés */
 .star:nth-child(4) {
   top: calc(30% - 100px);
   left: calc(50% - 200px);
-  animation-delay: -10s;
+  animation-delay: 9s;
 }
 .star:nth-child(4)::before,
 .star:nth-child(4)::after {
-  animation-delay: -10s;
+  animation-delay: 9s;
 }
 
 .star:nth-child(5) {
   top: calc(60% + 50px);
   left: calc(50% + 300px);
-  animation-delay: -8s;
+  animation-delay: 30s;
 }
 .star:nth-child(5)::before,
 .star:nth-child(5)::after {
-  animation-delay: -8s;
+  animation-delay: 30s;
 }
 
 .star:nth-child(6) {
   top: calc(20% + 100px);
   left: calc(50% + 500px);
-  animation-delay: -4s;
+  animation-delay: 56s;
 }
 .star:nth-child(6)::before,
 .star:nth-child(6)::after {
-  animation-delay: -4s;
+  animation-delay: 56s;
 }
 
 .star:nth-child(7) {
   top: calc(80% - 150px);
   left: calc(50% - 100px);
-  animation-delay: 54s;
+  animation-delay: 80s;
 }
 .star:nth-child(7)::before,
 .star:nth-child(7)::after {
-  animation-delay: 54s;
+  animation-delay: 80s;
 }
 
 .star:nth-child(8) {
