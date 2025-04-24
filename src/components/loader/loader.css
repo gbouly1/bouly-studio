@@ -54,3 +54,12 @@
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 1060px) {
+  .animated-letter {
+    font-size: 2em;
+  }
+  .o-loader {
+    font-size: 2em;
+  }
+}

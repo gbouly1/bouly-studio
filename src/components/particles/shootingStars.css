@@ -47,14 +47,13 @@
 .star:nth-child(1) {
   top: calc(100% - 200px);
   left: calc(50% - 450px);
-  animation-delay: -20s; /* Modifié pour apparaître rapidement (5s) */
+  animation-delay: -20s;
 }
 .star:nth-child(1)::before,
 .star:nth-child(1)::after {
   animation-delay: -20s;
 }
 
-/* Garder les étoiles 2 et 3 existantes */
 .star:nth-child(2) {
   top: calc(100% - 300px);
   left: calc(50% - -200px);
@@ -62,41 +61,41 @@
 }
 .star:nth-child(2)::before,
 .star:nth-child(2)::after {
-  animation-delay: -14s;
+  animation-delay: -16s;
 }
 
 .star:nth-child(3) {
   top: calc(40% - 0px);
   left: calc(50% - 800px);
-  animation-delay: 0s;
+  animation-delay: -10s;
 }
 .star:nth-child(3)::before,
 .star:nth-child(3)::after {
-  animation-delay: 0s;
+  animation-delay: -10s;
 }
 
 /* Nouvelles étoiles (4 à 8) avec des délais variés */
 .star:nth-child(4) {
   top: calc(30% - 100px);
   left: calc(50% - 200px);
-  animation-delay: 9s;
+  animation-delay: -3s;
 }
 .star:nth-child(4)::before,
 .star:nth-child(4)::after {
-  animation-delay: 9s;
+  animation-delay: -3s;
 }
 
 .star:nth-child(5) {
   top: calc(60% + 50px);
   left: calc(50% + 300px);
-  animation-delay: 30s;
+  animation-delay: 0s;
 }
 .star:nth-child(5)::before,
 .star:nth-child(5)::after {
-  animation-delay: 30s;
+  animation-delay: 0s;
 }
 
-.star:nth-child(6) {
+/* .star:nth-child(6) {
   top: calc(20% + 100px);
   left: calc(50% + 500px);
   animation-delay: 56s;
@@ -124,7 +123,7 @@
 .star:nth-child(8)::before,
 .star:nth-child(8)::after {
   animation-delay: 68s;
-}
+} */
 
 @keyframes appearAndMove {
   /* L'étoile est invisible pendant la majorité du temps */

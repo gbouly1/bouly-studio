@@ -41,3 +41,23 @@
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 } */
+
+@media screen and (max-width: 1060px) {
+  #hero {
+    padding-left: 5%;
+    height: 100%;
+    padding-top: 50%;
+    padding-bottom: 30%;
+  }
+  #about {
+    height: unset;
+  }
+  .hero-wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+  .container {
+    width: 100%;
+    padding-left: 0;
+  }
+}

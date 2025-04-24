@@ -39,3 +39,16 @@
 .o-contact {
   color: var(--green);
 }
+
+@media screen and (max-width: 1060px) {
+  .contact-title {
+    font-size: 100px;
+  }
+  .contact-studio {
+    font-size: 100px;
+  }
+  .contact-container {
+    padding: 20px 10px;
+    margin: 0;
+  }
+}

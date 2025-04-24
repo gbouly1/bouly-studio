@@ -61,3 +61,21 @@
   color: var(--black);
   transition: all 0.7s ease;
 }
+
+@media screen and (max-width: 1060px) {
+  .project-wrapper {
+    padding: 20px 10px;
+    height: 100px;
+  }
+
+  .title-project {
+    font-size: 2rem;
+  }
+
+  .date-project {
+    font-size: 0rem;
+  }
+  .container {
+    padding-top: 50px;
+  }
+}

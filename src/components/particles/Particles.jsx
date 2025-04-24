@@ -96,9 +96,6 @@ const ParticlesComponent = (props) => {
         <span className="star"></span>
         <span className="star"></span>
         <span className="star"></span>
-        <span className="star"></span>
-        <span className="star"></span>
-        <span className="star"></span>
       </div>
     </div>
   );

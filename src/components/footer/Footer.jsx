@@ -8,9 +8,9 @@ const Footer = () => {
         <li className="li-socials">
           <a href="#">instagram</a>
         </li>
-        <li className="li-socials">
+        {/* <li className="li-socials">
           <a href="#">linkdin</a>
-        </li>
+        </li> */}
         <li className="li-socials">
           <a href="#">twitter</a>
         </li>

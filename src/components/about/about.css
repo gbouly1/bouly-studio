@@ -157,3 +157,33 @@
   animation: floating3 17s ease-in-out infinite;
   animation-delay: 1.2s;
 }
+
+@media screen and (max-width: 1060px) {
+  .about-wrapper {
+    width: unset;
+    padding-left: 0;
+    padding-bottom: 50px;
+  }
+  .about-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hobbie-item {
+    font-size: 1.1rem;
+  }
+  .hobbies-wrapper {
+    width: 100%;
+    min-height: 400px;
+    padding-right: 20px;
+  }
+  .hobbie-item:nth-child(2) {
+    top: 30%;
+    left: 70%;
+    animation: floating2 14s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  .hobbies-title {
+    font-size: 1.2rem;
+    padding-top: 10px;
+  }
+}
